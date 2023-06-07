@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+color: ghostwhite;     
+background-image: linear-gradient( 29deg, black, aqua);
+}
+
+h3{
+    color: yellow
+}
+h1{
+ color: brown;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+ .card{
+    height: 150px;
+    width: 100px;
+    background-color: deeppink;
+    border: 1px solid blue;
+ }
+
+ #directionbutton{
+    height: 30px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: darkorange;
+  
+    
+ }
+ a{
+    text-decoration: none;
+    color: cyan;
+ }

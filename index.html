@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1 style="text-decoration: underline; background-color: black;">DOM Handson</h1>
+
+    <h3>Q-1 Write the code to access element which is having id as "text"</h3>
+    <div id="text">Welcome to the course</div><br>
+    <pre>let element1 = document.getElementById("text")
+      console.log(element1);</pre>
+
+    <h3>Q-2 Write the code to access element which is having tag as "h1"</h3>
+    <h1>This is h1 heading</h1>
+    <pre>
+      let element2= document.getElementsByTagName("h1")
+console.log(element2);
+    </pre>
+
+    <h3>Q-3 Write the code to access element which is having class as "box"</h3>
+    <div class="box">This have a class name box</div>
+    <pre>
+      let element3 = document.getElementsByClassName("box")
+console.log(element3);
+    </pre>
+
+    <h3>
+      Q-4 "
+      
+
+      Change the heading from ""Hello"" to ""Hello World"" using DOM functions"
+    </h3>
+    <h1>Hello</h1>
+    <pre>
+      let newheading = element2[2].innerHTML=  ("Hello World")
+console.log(element2[2])
+    </pre>
+
+    <h3>
+      Q-5 Create an HTML page having content as Hello world and a button named
+      Replace Text. When user will click on this button page content should be
+      changed to "Welcome to Elevation academy"
+    </h3>
+
+    <div id="replacetext">Hello World</div>
+    <button onclick="newtext()">Replace Text</button>
+
+    <h3>
+      Q-6
+
+      
+
+      Add one style attribute and give text color as red and id attribute and
+      give the id value as ""heading"" in the above given h1 tag using DOM
+      functions"
+    </h3>
+    <pre>let newstyle =element2[3].style.color = ("red")
+      let newattribute = element2[3].setAttribute("id", "heading")
+      console.log( element2[3])</pre>
+    <h1>Hello</h1>
+    <h3>
+      Q-7 Create three cards on HTML page and arrange them using flex property
+      in row or horizontal direction and also create button at the bottom named
+      "Change Flex direction". When user clicks on this button, the cards
+      arrangement should be changed to vertical direction.
+    </h3>
+
+    <div class="container">
+        <div class="card card1">Card1</div>
+        <div class="card card2">Card2</div>
+        <div class="card card3">Card3</div>
+        
+    </div>
+    <button onclick="direction()" id="directionbutton">Change Flex Direction</button>
+
+    <h3>Q-8 What’s the difference between window vs document?</h3>
+
+    <table border="1px">
+      <tr>
+        <th>window</th>
+        <th>document</th>
+      </tr>
+      <tr>
+        <td>1. The window object represents a window/tab containing a DOM document</td>
+        <td>1. Document object is property of window object that points to the DOM document loaded in that window.</td>
+      </tr>
+      <tr>
+        <td>2.window is the execution context and global object for that context's JavaScript.</td>
+        <td>2. Document contains the DOM, initialized by parsing HTML. screen describes the physical display's full screen</td>
+      </tr>
+      <tr>
+        <td>3. It is the outmost element of the object hierarchy.</td>
+        <td>3. Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page.</td>
+      </tr>
+
+      <tr>
+        <td>4. Example: window.document.title will return the title of the document.</td>
+        <td>4. Example: document.title will return the title of the document.</td>
+      </tr>
+    </table>
+
+    <h3>Q-9 Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</h3>
+<h2>TIMER CLOCK</h2>
+<span id="HH"></span>:
+<span id="MM"></span>:
+<span id="SS"></span>
+<span id="AMPM"></span>
+
+    <h3>Q-10 Guess the number</h3>
+    <a href="./game.html">Click Here to play</a>
+
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
